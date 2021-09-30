@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1632766487 source:c:\users\tr032030\downloads\projetos em c\projetos em c\cria_função\main.c
+	<stdio.h>
+	<locale.h>
+	<string.h>
+
