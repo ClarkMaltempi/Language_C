@@ -4,146 +4,115 @@
 #include <locale.h>
 #include <conio.h>
 #define Ptr setlocale(LC_ALL,"Portuguese");
-#define Suprimentos
+#define exe34
 
 
 /*
 
-    28.	Gere a seguinte sequÍncia abaixo para K termos.
-    K representa a quantidade de n˙meros que o usu·rio gostaria quer
-     fosse exibida dessa sequÍncia. Mostre tambÈm a somatÛria apenas dos n˙meros divisÌveis por
-     3 dessa sequÍncia. Utilize o laÁo do while para a entrada da quantidade K e um laÁo for para
-     efetuar os c·lculos solicitados.
 
-		1, 1, 2, 3, 5, 8, 13, 21,.....
+    30.	Uma empresa contratou a quantidade de funcion√°rios representada pela vari√°vel Y.
+    Conforme o valor das vendas mensais, os funcion√°rios adquirem pontos que determinar√£o
+    seus sal√°rios ao final de cada m√™s. Sabe-se que esses funcion√°rios trabalhar√£o nos meses
+    de novembro a janeiro do ano subsequente. Utilize os la√ßos que desejar.
 
-
-    30.	Uma empresa contratou a quantidade de funcion·rios representada pela vari·vel Y.
-    Conforme o valor das vendas mensais, os funcion·rios adquirem pontos que determinar„o
-    seus sal·rios ao final de cada mÍs. Sabe-se que esses funcion·rios trabalhar„o nos meses
-    de novembro a janeiro do ano subsequente. Utilize os laÁos que desejar.
-
-    a)	Leia as pontuaÁıes nos trÍs meses de cada funcion·rio;
-    b)	Calcule e mostre a pontuaÁ„o geral de cada funcion·rio nos trÍs meses.
-    c)	Calcule e mostre a mÈdia das pontuaÁıes de cada funcion·rio nos trÍs meses.
-    d)	Determine e mostre a maior pontuaÁ„o atingida entre todos os funcion·rios nos trÍs meses.
+    a)	Leia as pontua√ß√µes nos tr√™s meses de cada funcion√°rio;
+    b)	Calcule e mostre a pontua√ß√£o geral de cada funcion√°rio nos tr√™s meses.
+    c)	Calcule e mostre a m√©dia das pontua√ß√µes de cada funcion√°rio nos tr√™s meses.
+    d)	Determine e mostre a maior pontua√ß√£o atingida entre todos os funcion√°rios nos tr√™s meses.
 
 
-    31.	Solicite ao usu·rio a quantidade de n˙meros de termos que ele deseja.
-    Exiba a somatÛria dos valores da sÈrie abaixo referente a quantidade determinada
-    pelo usu·rio: Utilize os laÁos que desejar.
+    31.	Solicite ao usu√°rio a quantidade de n√∫meros de termos que ele deseja.
+    Exiba a somat√≥ria dos valores da s√©rie abaixo referente a quantidade determinada
+    pelo usu√°rio: Utilize os la√ßos que desejar.
     2,  7, 3, 4,  21, 12 , 8,  63,  48,  16,  189,  192,  32,   567,  768,  64, ...
 
 
-    32.	Receba doze n˙meros positivos e armazene no vetor A.
-    ApÛs a alimentaÁ„o de todos os n˙meros mostre apenas os
-    n˙meros maiores que 121 que est„o armazenados no vetor.
-
-    33.	Leia oito elementos e armazene-os no vetor A. Construa o vetor B de mesma dimens„o
-    com os elementos do vetor A multiplicados por 3. Apresente o conte˙do dos dois vetores.
-
-    34.	FaÁa um programa que armazene num vetor 6 n˙meros negativos.
+    34.	Fa√ßa um programa que armazene num vetor 6 n√∫meros negativos.
     Calcule a soma dos seus quadrados; se a soma for inferior a 1000
-    solicite novos dados. Mostre somente a soma que satisfaz a condiÁ„o.
+    solicite novos dados. Mostre somente a soma que satisfaz a condi√ß√£o.
 
-    35. Armazene num vetor dez n˙meros positivos. Exiba o conte˙do do vetor.
-    Mostre o maior n˙mero, quantas vezes ele foi digitado e em que posiÁıes ele apareceu dentro do vetor.
-
-    36.	Armazene no vetor A 10 elementos positivos. Construa o vetor B do mesmo tipo e dimens„o.
-    Cada elemento do vetor B deve ser o valor negativo do elemento correspondente do vetor A.
-    Desta forma, se em A [1] estiver armazenado o elemento 8 deve estar em B [1] o valor ñ8,
-    e assim por diante. Apresentar o conte˙do dos dois vetores.
-
-    37.	Leia o vetor A de uma dimens„o m·xima de 15 elementos.
-    O usu·rio poder· digitar a quantidade desejada desde que o valor seja inferior ou igual a 15.
-     Construir um vetor B de mesmo tipo, de modo que cada elemento do vetor B seja fatorial do elemento correspondente do vetor A.
-     Apresentar o conte˙do dos dois vetores.
-
-     38.	O usu·rio poder· digitar a quantidade de n˙meros que ele deseja armazenar no vetor
-     A desde que esse valor seja superior a 4 e inferior ou igual a 20. Construa o vetor B da mesma dimens„o e com os mesmos elementos do vetor A.
-     Observando que o primeiro elemento de A passa a ser o ˙ltimo de B, o segundo elemento de A passa a ser o pen˙ltimo de B
-     e a assim por diante. Exibir o conte˙do dos dois vetores.
-
-
-     39.	Leia trÍs vetores (A, B e C) de uma dimens„o com 5 elementos cada.
-     Construa o vetor D, sendo este a junÁ„o dos trÍs outros vetores. Armazene no vetor D o primeiro elemento do vetor
-     A depois do B e do C e assim sucessivamente.  Apresentar o conte˙do de todos os vetores.
-     Exiba quantas vezes apareceram n˙meros negativos no vetor D.
-
-
-     40.	Leia o vetor A tipo vetor com 10 elementos positivos. Construa o vetor B de mesmo tipo,
+    40.	Leia o vetor A tipo vetor com 10 elementos positivos. Construa o vetor B de mesmo tipo,
       e cada elemento de B deve ser a metade de cada elemento de A.
-      Exiba em que Vetor e em que posiÁıes apareceram valores superiores a 4
+      Exiba em que Vetor e em que posi√ß√µes apareceram valores superiores a 4
 
-      41.	Elabore um programa que efetue o c·lculo de uma tabuada de um n˙mero
-      qualquer e armazene os resultados no vetor A de uma dimens„o para 10 elementos.
-      O usu·rio dever· digitar o n˙mero e o programa dever· construir e exibir a tabuada correspondente.
+    37.	Leia o vetor A de uma dimens√£o m√°xima de 15 elementos.
+    O usu√°rio poder√° digitar a quantidade desejada desde que o valor seja inferior ou igual a 15.
+     Construir um vetor B de mesmo tipo, de modo que cada elemento do vetor B seja fatorial do elemento correspondente do vetor A.
+     Apresentar o conte√∫do dos dois vetores.
 
-      42.	Receba a temperatura mÈdia de cada mÍs do ano e
+     38.	O usu√°rio poder√° digitar a quantidade de n√∫meros que ele deseja armazenar no vetor
+     A desde que esse valor seja superior a 4 e inferior ou igual a 20. Construa o vetor B da mesma dimens√£o e com os mesmos elementos do vetor A.
+     Observando que o primeiro elemento de A passa a ser o √∫ltimo de B, o segundo elemento de A passa a ser o pen√∫ltimo de B
+     e a assim por diante. Exibir o conte√∫do dos dois vetores.
+
+
+
+
+      42.	Receba a temperatura m√©dia de cada m√™s do ano e
       armazene essas temperaturas em um vetor;
-      calcule e mostre a maior, a menor temperatura do ano e a mÈdia das temperaturas.
+      calcule e mostre a maior, a menor temperatura do ano e a m√©dia das temperaturas.
       Mostre todas as temperaturas armazenadas.
 
       43.	Receba a nota de dez alunos e armazene essas notas em um vetor. Calcule e mostre:
-        a)	A mÈdia da classe;
-        b)	A quantidade de alunos aprovados, isto È, com nota >=7;
-        c)	A quantidade de alunos reprovados, isto È, com nota <7.
+        a)	A m√©dia da classe;
+        b)	A quantidade de alunos aprovados, isto √©, com nota >=7;
+        c)	A quantidade de alunos reprovados, isto √©, com nota <7.
 
-   44. Receba o peso e o n˙mero de identificaÁ„o gerado pelo programador contendo no m·ximo de 15 pessoas. A quantidade de indivÌduos
-   ser· definida pelo usu·rio. Armazene esses dados em dois vetores, o primeiro contendo os pesos e o segundo contendo os n˙meros de identificaÁ„o. Calcule e mostre:
+   44. Receba o peso e o n√∫mero de identifica√ß√£o gerado pelo programador contendo no m√°ximo de 15 pessoas. A quantidade de indiv√≠duos
+   ser√° definida pelo usu√°rio. Armazene esses dados em dois vetores, o primeiro contendo os pesos e o segundo contendo os n√∫meros de identifica√ß√£o. Calcule e mostre:
         a)	Quantas pessoas apresentaram peso superior ao menor peso.
-        b)	Armazene os n˙meros de identificaÁ„o das pessoas que satisfazem essa condiÁ„o. Mostre o conte˙do desse vetor.
-        c)	Armazene num outro vetor os pesos superiores a 55 quilos e menores ou igual a 80 quilos das pessoas. Mostre o conte˙do desse vetor.
+        b)	Armazene os n√∫meros de identifica√ß√£o das pessoas que satisfazem essa condi√ß√£o. Mostre o conte√∫do desse vetor.
+        c)	Armazene num outro vetor os pesos superiores a 55 quilos e menores ou igual a 80 quilos das pessoas. Mostre o conte√∫do desse vetor.
 
     45. Efetue a leitura de dez elementos para o vetor A.
-    Construa o vetor B, observando a seguinte lei de formaÁ„o: se o valor do Ìndice do vetor for par,
-    o valor do elemento deve ser multiplicado pelo valor 5; sendo o Ìndice Ìmpar, dever· ser somado ao valor existente o valor 5. Mostre o conte˙do dos dois vetores.
+    Construa o vetor B, observando a seguinte lei de forma√ß√£o: se o valor do √≠ndice do vetor for par,
+    o valor do elemento deve ser multiplicado pelo valor 5; sendo o √≠ndice √≠mpar, dever√° ser somado ao valor existente o valor 5. Mostre o conte√∫do dos dois vetores.
 
 
     46.	Efetue a leitura de dez elementos para o vetor A. No final,
-    apresente a somatÛria de todos os elementos do vetor A que sejam Ìmpares.
-     Armazene no vetor B a posiÁ„o em que est„o armazenados os n˙meros Ìmpares. Mostre o conte˙do dos dois vetores.
+    apresente a somat√≥ria de todos os elementos do vetor A que sejam √≠mpares.
+     Armazene no vetor B a posi√ß√£o em que est√£o armazenados os n√∫meros √≠mpares. Mostre o conte√∫do dos dois vetores.
 
-     47.	Leia 12 elementos inteiros para o vetor A e construa o vetor B com a mesma dimens„o, observando a seguinte lei de formaÁ„o:
-     ìTodo elemento do vetor A que for Ìmpar deve ser multiplicado por 2; caso contr·rio, o elemento do vetor A deve permanecer constanteî.
-     Exiba o conte˙do dos dois vetores.
+     47.	Leia 12 elementos inteiros para o vetor A e construa o vetor B com a mesma dimens√£o, observando a seguinte lei de forma√ß√£o:
+     ‚ÄúTodo elemento do vetor A que for √≠mpar deve ser multiplicado por 2; caso contr√°rio, o elemento do vetor A deve permanecer constante‚Äù.
+     Exiba o conte√∫do dos dois vetores.
 
-    48.	Receba o sal·rio e o n˙mero de identificaÁ„o gerado pelo programador contendo no m·ximo 13 pessoas.
-    A quantidade de indivÌduos ser· definida pelo usu·rio. Armazene esses dados em dois vetores,
-    o primeiro contendo os sal·rios e o segundo contendo os n˙meros de identificaÁ„o. Calcule e mostre:
+    48.	Receba o sal√°rio e o n√∫mero de identifica√ß√£o gerado pelo programador contendo no m√°ximo 13 pessoas.
+    A quantidade de indiv√≠duos ser√° definida pelo usu√°rio. Armazene esses dados em dois vetores,
+    o primeiro contendo os sal√°rios e o segundo contendo os n√∫meros de identifica√ß√£o. Calcule e mostre:
 
-    d)	Armazene em um vetor os n˙meros de identificaÁ„o de todas as pessoas que apresentam a maior sal·rio.
-    e)	Armazene num outro vetor os n˙meros de identificaÁ„o de todas as pessoas que apresentam a menor sal·rio encontrado. Mostre o conte˙do de todos os vetores.
+    d)	Armazene em um vetor os n√∫meros de identifica√ß√£o de todas as pessoas que apresentam a maior sal√°rio.
+    e)	Armazene num outro vetor os n√∫meros de identifica√ß√£o de todas as pessoas que apresentam a menor sal√°rio encontrado. Mostre o conte√∫do de todos os vetores.
 
 
-    49.	Leia 8 elementos (valores inteiros) para os vetores A e B de uma dimens„o do tipo vetor. Construir vetores C e D de mesmo tipo e dimens„o.
+    49.	Leia 8 elementos (valores inteiros) para os vetores A e B de uma dimens√£o do tipo vetor. Construir vetores C e D de mesmo tipo e dimens√£o.
      O vetor C deve ser formado pelos elementos de
-    Ìndice Ìmpar dos vetores A e B, e O vetor D deve ser formado pelos elementos de Ìndice par dos vetores A e B.
-    Apresente os conte˙dos de todos os vetores.
+    √≠ndice √≠mpar dos vetores A e B, e O vetor D deve ser formado pelos elementos de √≠ndice par dos vetores A e B.
+    Apresente os conte√∫dos de todos os vetores.
 
-    50.	Leia dois vetores A e B de uma dimens„o com 6 elementos. O vetor A deve aceitar apenas a
-    entrada de valores pares, enquanto o vetor B deve aceitar apenas a entrada de valores Ìmpares.
-    A entrada dos dois vetores deve ser validada pelo programa e n„o pelo usu·rio. Construir o vetor C
-    que dever· ser a junÁ„o dos vetores A e B, de modo que seja armazenado
+    50.	Leia dois vetores A e B de uma dimens√£o com 6 elementos. O vetor A deve aceitar apenas a
+    entrada de valores pares, enquanto o vetor B deve aceitar apenas a entrada de valores √≠mpares.
+    A entrada dos dois vetores deve ser validada pelo programa e n√£o pelo usu√°rio. Construir o vetor C
+    que dever√° ser a jun√ß√£o dos vetores A e B, de modo que seja armazenado
     um elemento do vetor A e em seguida um elemento do vetor B. O vetor C contenha 12 elementos.
-    Exiba os conte˙dos dos vetores A e B juntos e depois o conte˙do do vetor C.
+    Exiba os conte√∫dos dos vetores A e B juntos e depois o conte√∫do do vetor C.
 
 
-    51.	Crie a funÁ„o Categoria que receba da funÁ„o main um valor do tipo inteiro e maior que zero que representa a idade
+    51.	Crie a fun√ß√£o Categoria que receba da fun√ß√£o main um valor do tipo inteiro e maior que zero que representa a idade
     e que verifique a categoria baseada na tabela abaixo.
-    Exiba na funÁ„o main o n˙mero e a categoria de um grupo de K n˙meros definidos pelo usu·rio e armazenado no vetor Idades.
-    Essa quantidade K dever· ser maior ou igual a 3 e menor ou igual a 10.
+    Exiba na fun√ß√£o main o n√∫mero e a categoria de um grupo de K n√∫meros definidos pelo usu√°rio e armazenado no vetor Idades.
+    Essa quantidade K dever√° ser maior ou igual a 3 e menor ou igual a 10.
 
 */
 #ifdef exe24
 
 
 /*
-24.	Receba a quantidade de sal·rios de K indivÌduos. K representa essa quantidade e deve ser digitada pelo usu·rio.
-    A vari·vel Sal·rio armazena cada uma dos K sal·rios digitados. Calcule e mostre a somatÛria dos sal·rios superiores a
-    3 sal·rios-mÌnimos e inferior ou igual a 7 sal·rios-mÌnimos.
-    Exiba tambÈm o maior e o menor sal·rio encontrado. Utilize o laÁo while para a entrada da quantidade
-    K e um laÁo while para efetuar os c·lculos e as comparaÁıes solicitadas.
+24.	Receba a quantidade de sal√°rios de K indiv√≠duos. K representa essa quantidade e deve ser digitada pelo usu√°rio.
+    A vari√°vel Sal√°rio armazena cada uma dos K sal√°rios digitados. Calcule e mostre a somat√≥ria dos sal√°rios superiores a
+    3 sal√°rios-m√≠nimos e inferior ou igual a 7 sal√°rios-m√≠nimos.
+    Exiba tamb√©m o maior e o menor sal√°rio encontrado. Utilize o la√ßo while para a entrada da quantidade
+    K e um la√ßo while para efetuar os c√°lculos e as compara√ß√µes solicitadas.
 */
 
 
@@ -171,7 +140,7 @@ float cadastroSal (int k)
 
     do
     {
-        printf("\n*Cadastre o Salario!*\n De *%i* Funcion·rios \n", k);
+        printf("\n*Cadastre o Salario!*\n De *%i* Funcion√°rios \n", k);
         printf("\n*Quantidade Cadastrada : *%i*  \n", cont);
         printf("  \nDigite>>> ");
         scanf("%f", &sal);
@@ -191,38 +160,38 @@ float cadastroSal (int k)
         MinA = SalMinimo*3;
         MinB = SalMinimo*7;
 
-    /*Verifica condiÁıes*/
+    /*Verifica condi√ß√µes*/
     for(i=0;i<k;i++)
     {
         if(vet[i]>= MinA && vet[i]<= MinB)
         {
 
-            printf("\n  Sal·rio > 3 Sal·rio MÌnimo Sal E Sal < 7 Sal·rio MÌnimo:\n  >> %.2f", vet[i]);
+            printf("\n  Sal√°rio > 3 Sal√°rio M√≠nimo Sal E Sal < 7 Sal√°rio M√≠nimo:\n  >> %.2f", vet[i]);
 
         }
         if(vet[i]> MinB)
         {
             printf(" \n------------------------------------------------------------------- \n");
-            printf("\n  Sal·rio > 7 Sal mÌnimos: >> %.2f  \n\n", vet[i]);
+            printf("\n  Sal√°rio > 7 Sal m√≠nimos: >> %.2f  \n\n", vet[i]);
 
 
         }
         if (vet[i] < MinA)
         {
             printf(" \n -------------------------------------------- \n");
-            printf("\n  Sal·rio abaixo de 3 sal·rios mÌnimos:\n  >> %.2f  \n\n", vet[i]);
+            printf("\n  Sal√°rio abaixo de 3 sal√°rios m√≠nimos:\n  >> %.2f  \n\n", vet[i]);
 
         }
     }
         printf(" \n -------------------------------------------- \n");
-        printf("\n  Maior Sal·rio cadastrado: %.2f  \n", MaxSal);
-        printf("  Menor Sal·rio cadastrado: %.2f  \n", MinSal);
+        printf("\n  Maior Sal√°rio cadastrado: %.2f  \n", MaxSal);
+        printf("  Menor Sal√°rio cadastrado: %.2f  \n", MinSal);
 }
 
 int main()
 {
     Ptr;
-    /*Sal·rio MÌnimo R$ 1.192,40*/
+    /*Sal√°rio M√≠nimo R$ 1.192,40*/
     int k, salario;
 
     do
@@ -255,11 +224,11 @@ int main()
 #ifdef exe25
 
 /*
-25.	Receba a quantidade de pesos de N pessoas. N representa essa quantidade e deve ser digitada pelo usu·rio.
-    A vari·vel P representa cada peso digitado. Calcule e mostre a mÈdia dos pesos superiores ou iguais a 70 quilos
-    e inferiores ou iguais a 85,5 e a quantidade de pessoas que apresentam pesos superiores a 75 quilos. Exiba tambÈm o menor,
-    a quantidade de vezes que o menor peso foi encontrado e o maior peso encontrado. Utilize o laÁo while para a entrada da quantidade N e um
-    laÁo do while para efetuar os c·lculos e as comparaÁıes solicitadas.
+25.	Receba a quantidade de pesos de N pessoas. N representa essa quantidade e deve ser digitada pelo usu√°rio.
+    A vari√°vel P representa cada peso digitado. Calcule e mostre a m√©dia dos pesos superiores ou iguais a 70 quilos
+    e inferiores ou iguais a 85,5 e a quantidade de pessoas que apresentam pesos superiores a 75 quilos. Exiba tamb√©m o menor,
+    a quantidade de vezes que o menor peso foi encontrado e o maior peso encontrado. Utilize o la√ßo while para a entrada da quantidade N e um
+    la√ßo do while para efetuar os c√°lculos e as compara√ß√µes solicitadas.
 
 */
 
@@ -289,7 +258,7 @@ float cadastroPes (int n)
 
     do
     {
-        printf("\n*Cadastre o Peso!*\n De *%i* Funcion·rios \n", n);
+        printf("\n*Cadastre o Peso!*\n De *%i* Funcion√°rios \n", n);
         printf("\n*Quantidade Cadastrada : *%i*  \n", cont);
         printf("  \nDigite>>> ");
         scanf("%f", &peso);
@@ -310,7 +279,7 @@ float cadastroPes (int n)
     }while(cont != n);
 
 
-    /*Verifica condiÁıes*/
+    /*Verifica condi√ß√µes*/
     for(i=0;i<n;i++)
     {
         if(vet[i]>= 70 && vet[i]<= 85.5)
@@ -329,13 +298,13 @@ float cadastroPes (int n)
 
         media = calc/n;
         printf(" \n -------------------------------------------- \n");
-        printf("\n | MÈdia | Peso > 70 E Pes < 85.5 Kg :\n  >> %.2f", media);
+        printf("\n | M√©dia | Peso > 70 E Pes < 85.5 Kg :\n  >> %.2f", media);
 }
 
 int main()
 {
     Ptr;
-    /*Sal·rio MÌnimo R$ 1.192,40*/
+    /*Sal√°rio M√≠nimo R$ 1.192,40*/
     int n, salario;
 
     do
@@ -370,13 +339,13 @@ int main()
 
 /*
 26.	Em uma pesquisa de campo, uma editora solicitou os seguintes dados para os entrevistados: sexo,
-    idade e quantidade de livros que leu no ano anterior.  FaÁa um programa que leia os dados digitados
-    pelo usu·rio, sendo que dever„o ser solicitados dados atÈ que a idade digitada seja um valor negativo. Depois, calcule e imprima:
+    idade e quantidade de livros que leu no ano anterior.  Fa√ßa um programa que leia os dados digitados
+    pelo usu√°rio, sendo que dever√£o ser solicitados dados at√© que a idade digitada seja um valor negativo. Depois, calcule e imprima:
 
     a)	A quantidade total de livros lidos pelos entrevistados menores de 10 anos.
     b)	A quantidade de mulheres que leram 5 livros ou mais.
-    c)   A mÈdia de idade dos homens que leram menos que 5 livros.
-    d) O percentual de pessoas que n„o leram LIVROS.
+    c)   A m√©dia de idade dos homens que leram menos que 5 livros.
+    d) O percentual de pessoas que n√£o leram LIVROS.
 */
 
 /*
@@ -387,7 +356,7 @@ int main()
      livros     livros   livros    livros
        0          1        2         N
 
-    Cada posiÁ„o do vetor armazena um conjunto de informaÁıes diferentes.
+    Cada posi√ß√£o do vetor armazena um conjunto de informa√ß√µes diferentes.
 
 */
 
@@ -399,7 +368,7 @@ typedef struct
 
 } Biblioteca;
 Biblioteca Bibli[10];
-/*Observe que a linha 406 È a que cria de fato o vetor.*/
+/*Observe que a linha 406 √© a que cria de fato o vetor.*/
 char cadastro(int n)
 {
     int i, opc;
@@ -429,7 +398,7 @@ char cadastro(int n)
         scanf("%d%*c", &Bibli[i].QtdLivros);
     }
 
-    printf(" \nDeseja visualizar o que foi cadastrado: \n\n Sim [1]\n N„o [2]\n ");
+    printf(" \nDeseja visualizar o que foi cadastrado: \n\n Sim [1]\n N√£o [2]\n ");
     printf("  \nDigite>>> ");
     scanf("%d",&opc);
 
@@ -464,7 +433,7 @@ void Imprimir(n)
            livros = livros + Bibli[i].QtdLivros;
         }
 
-        /*Uma funÁ„o chamada strcmp(string1, string2); da biblioteca de strings È utilizada para fazer a comparaÁ„o da primeira string com a segunda string. */
+        /*Uma fun√ß√£o chamada strcmp(string1, string2); da biblioteca de strings √© utilizada para fazer a compara√ß√£o da primeira string com a segunda string. */
         if((strcmp("feminino",Bibli[i].sexo) == 0) && (Bibli[i].QtdLivros >=5))
         {
             Mulheres++;
@@ -492,13 +461,13 @@ void Imprimir(n)
     printf(" \n ------------------------------------------------------------------------\n");
 
     homens = mediaIdade/homens;
-    printf("\nA mÈdia de idade dos homens que leram menos que 5 livros");
+    printf("\nA m√©dia de idade dos homens que leram menos que 5 livros");
     printf("\n[Total]: %i", homens);
     printf(" \n ------------------------------------------------------------------------\n");
 
     pessoas = pessoas/100*n;
     pessoas = pessoas*100;
-    printf("\nO percentual de pessoas que n„o leram LIVROS");
+    printf("\nO percentual de pessoas que n√£o leram LIVROS");
     printf("\n[Total]: %.2f%%", pessoas);
     printf(" \n ------------------------------------------------------------------------\n");
 
@@ -525,7 +494,7 @@ int main(void)
         }
 
         printf("\n");
-        printf("VocÍ optou por sair!!!!\n");
+        printf("Voc√™ optou por sair!!!!\n");
         system("pause");
 
 
@@ -542,11 +511,11 @@ int main(void)
 
 /*
 
-    27.	Receba a quantidade K de n˙meros quaisquer. K representa essa quantidade e deve
-    ser digitada pelo usu·rio. A vari·vel num armazena cada uma dos K n˙meros digitados.
-    Calcule e mostre a quantidade de n˙meros positivos divisÌveis por 3, a mÈdia dos n˙meros negativos.
-    Exiba tambÈm o maior n˙mero encontrado e quantas vezes ele apareceu. Utilize o laÁo do
-    while para a entrada da quantidade K e um laÁo for para efetuar os c·lculos e as comparaÁıes solicitadas.
+    27.	Receba a quantidade K de n√∫meros quaisquer. K representa essa quantidade e deve
+    ser digitada pelo usu√°rio. A vari√°vel num armazena cada uma dos K n√∫meros digitados.
+    Calcule e mostre a quantidade de n√∫meros positivos divis√≠veis por 3, a m√©dia dos n√∫meros negativos.
+    Exiba tamb√©m o maior n√∫mero encontrado e quantas vezes ele apareceu. Utilize o la√ßo do
+    while para a entrada da quantidade K e um la√ßo for para efetuar os c√°lculos e as compara√ß√µes solicitadas.
 
 
 
@@ -572,7 +541,7 @@ int main(void)
         }
 
         printf("\n");
-        printf("VocÍ optou por sair!!!!\n");
+        printf("Voc√™ optou por sair!!!!\n");
         system("pause");
 
 
@@ -586,30 +555,30 @@ int main(void)
 
 #ifdef exeesp
 /*
-Escreva um programa que tem a estrutura de dados abaixo. O programa tem as seguintes opÁıes:
+Escreva um programa que tem a estrutura de dados abaixo. O programa tem as seguintes op√ß√µes:
 
-   1 ñ Entra dados do produto.
-   2 ñ Lista todos os produtos na tela.
-   3 ñ Pesquisar um produto pelo nome completo.
-   4 ñ Pesquisar por fornecedor completo
-   5 ñ Pesquisa produtos por faixa de preÁo.
-   6 ñ Altera quantidade em estoque (entrada e saÌda) pesquisado pelo nome.
-   7 ñ Altera preÁo de um produto pesquisado pelo nome completo
-   8 ñ Altera produto pesquisado pelo nome completo.
-   9 ñ Exclui produto pesquisado pelo nome completo.
-   10 ñ SaÌda pelo usu·rio
+   1 ‚Äì Entra dados do produto.
+   2 ‚Äì Lista todos os produtos na tela.
+   3 ‚Äì Pesquisar um produto pelo nome completo.
+   4 ‚Äì Pesquisar por fornecedor completo
+   5 ‚Äì Pesquisa produtos por faixa de pre√ßo.
+   6 ‚Äì Altera quantidade em estoque (entrada e sa√≠da) pesquisado pelo nome.
+   7 ‚Äì Altera pre√ßo de um produto pesquisado pelo nome completo
+   8 ‚Äì Altera produto pesquisado pelo nome completo.
+   9 ‚Äì Exclui produto pesquisado pelo nome completo.
+   10 ‚Äì Sa√≠da pelo usu√°rio
 
-Estrutura: produto, fornecedor, quantidade, preÁo.
+Estrutura: produto, fornecedor, quantidade, pre√ßo.
 
-A ˙nica estrutura de dados do programa deve ser uma vari·vel local na funÁ„o main(). Portanto a passagem da estrutura para as funÁıes utiliza ponteiro.
+A √∫nica estrutura de dados do programa deve ser uma vari√°vel local na fun√ß√£o main(). Portanto a passagem da estrutura para as fun√ß√µes utiliza ponteiro.
 
-Cada uma das opÁıes do menu È uma funÁ„o no programa.
+Cada uma das op√ß√µes do menu √© uma fun√ß√£o no programa.
 
-Todas as operaÁıes devem ser feitas direto no arquivo. (utilize a funÁ„o fseek).
+Todas as opera√ß√µes devem ser feitas direto no arquivo. (utilize a fun√ß√£o fseek).
 
-O programa tem um ˙nico arquivo de dados. N„o pode usar nenhum arquivo auxiliar.
+O programa tem um √∫nico arquivo de dados. N√£o pode usar nenhum arquivo auxiliar.
 
-O programa deve ser finalizado pelo usu·rio.
+O programa deve ser finalizado pelo usu√°rio.
 
 */
 
@@ -621,7 +590,7 @@ O programa deve ser finalizado pelo usu·rio.
      livros     livros   livros    livros
        0          1        2         N
 
-    Cada posiÁ„o do vetor armazena um conjunto de informaÁıes diferentes.
+    Cada posi√ß√£o do vetor armazena um conjunto de informa√ß√µes diferentes.
 
 */
 
@@ -642,9 +611,9 @@ void alfabetico(char variavel)
 {
    if((variavel >= 'a' && variavel <='z') || (variavel >= 'A' && VARIAVEL <='Z')){
 
-	printf("… uma letra\n");
+	printf("√â uma letra\n");
 }else{
-	printf("n„o È uma letra\n");
+	printf("n√£o √© uma letra\n");
 
 }
 
@@ -663,7 +632,7 @@ typedef struct
 
 } Biblioteca;
 Biblioteca Bibli[10];
-/*Observe que a linha 406 È a que cria de fato o vetor.*/
+/*Observe que a linha 406 √© a que cria de fato o vetor.*/
 char cadastro(int n)
 {
     int i, opc,x;
@@ -681,7 +650,7 @@ char cadastro(int n)
                     printf(" \nDigite Produto:\n ");
                     printf("  Digite>>> ");
                     scanf("%s%*c", &Bibli[x].nome);
-                    printf(" \nDigite o preÁo:\n ");
+                    printf(" \nDigite o pre√ßo:\n ");
                     printf("  Digite>>> ");
                     scanf("%f%*c", &Bibli[x].preco);
 
@@ -712,7 +681,7 @@ char ListaDados(int n)
                 i++;
             }else{
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -739,7 +708,7 @@ void Busca()
 
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -766,7 +735,7 @@ void BuscaFornecedor()
 
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -780,10 +749,10 @@ void BuscaProduto()
     char nome[20], pos[10] = {0,0,0,0,0,0,0,0,0,0,0};
     int i,faixaIni, FaixaFim, cont;
 
-    printf(" \n Digite a faixa de preÁo Entre (inicio) apartir De: ");
+    printf(" \n Digite a faixa de pre√ßo Entre (inicio) apartir De: ");
     scanf("%i",&faixaIni);
 
-    printf(" \n Digite a faixa de preÁo (Final) AtÈ: ");
+    printf(" \n Digite a faixa de pre√ßo (Final) At√©: ");
     scanf("%i",&FaixaFim);
 
     for(i=1; i<=10; i++)
@@ -802,7 +771,7 @@ void BuscaProduto()
             printf("\n Registro encontrado!\n ");
 
             printf(" \n Produto: %s ", Bibli[i].nome);
-            printf(" \n preÁo: %.2f ", Bibli[i].preco);
+            printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
             printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
             printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
             printf(" \n ------------------------------------------------------------------------\n");
@@ -828,14 +797,14 @@ void AlteraProduto()
 
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
 
                 printf(" \n Altera Estoque:\n ");
                 printf("\n\n [1] Entrada\n");
-                printf("[2] SaÌda\n");
+                printf("[2] Sa√≠da\n");
                 printf("  \n Digite>>> ");
                 scanf("%i",&opc);
 
@@ -847,13 +816,13 @@ void AlteraProduto()
                 }
                 if(opc == 2)
                 {
-                    printf(" \n Digite o valor de SaÌda:\n ");
+                    printf(" \n Digite o valor de Sa√≠da:\n ");
                     scanf("%i",&Estoque);
                     Bibli[i].QtdEstoque -= Estoque;
                 }
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -861,7 +830,7 @@ void AlteraProduto()
 
             }else{
 
-                printf("\n Registro n„o encontrado!\n ");
+                printf("\n Registro n√£o encontrado!\n ");
                 break;
             }
     }
@@ -887,12 +856,12 @@ void AlteraPreco()
 
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
 
-                printf(" \n Altera PreÁo:\n ");
+                printf(" \n Altera Pre√ßo:\n ");
                 printf(" \n Digite o preco que deseja alterar:\n ");
                 printf("  \n Digite>>> ");
                 scanf("%f",&preco);
@@ -901,7 +870,7 @@ void AlteraPreco()
 
 
                 printf(" \n\n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -909,7 +878,7 @@ void AlteraPreco()
 
             }else{
 
-                printf("\n Registro n„o encontrado!\n ");
+                printf("\n Registro n√£o encontrado!\n ");
                 break;
             }
     }
@@ -936,7 +905,7 @@ void AlteraNomeProduto()
 
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -950,7 +919,7 @@ void AlteraNomeProduto()
 
 
                 printf(" \n\n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -958,7 +927,7 @@ void AlteraNomeProduto()
 
             }else{
 
-                printf("\n Registro n„o encontrado!\n ");
+                printf("\n Registro n√£o encontrado!\n ");
                 break;
             }
     }
@@ -985,7 +954,7 @@ void ExcluirProduto()
 
 
                 printf(" \n Produto: %s ", Bibli[i].nome);
-                printf(" \n preÁo: %.2f ", Bibli[i].preco);
+                printf(" \n pre√ßo: %.2f ", Bibli[i].preco);
                 printf(" \n Quantidade de itens: %i\n ", Bibli[i].QtdEstoque);
                 printf("Fornecedor: %s\n ", Bibli[i].fornecedor);
                 printf(" \n ------------------------------------------------------------------------\n");
@@ -1009,7 +978,7 @@ void ExcluirProduto()
 
             }else{
 
-                printf("\n Registro n„o encontrado!\n ");
+                printf("\n Registro n√£o encontrado!\n ");
                 break;
             }
     }
@@ -1030,9 +999,9 @@ int main(void)
             printf(" [2] Listar todos os Produtos\n");
             printf(" [3] Busca por Nome de Produtos\n");
             printf(" [4] Busca por Nome de Fornecedor\n");
-            printf(" [5] Pesquisa Produto por faixa de preÁo\n");
+            printf(" [5] Pesquisa Produto por faixa de pre√ßo\n");
             printf(" [6] Alterar Estoque do Produto \n");
-            printf(" [7] Altera preÁo de um produto pesquisado pelo nome completo\n");
+            printf(" [7] Altera pre√ßo de um produto pesquisado pelo nome completo\n");
             printf(" [8] Altera produto pesquisado pelo nome\n");
             printf(" [9] Excluir Produto\n");
             printf(" [10] Sair\n");
@@ -1058,7 +1027,7 @@ int main(void)
                     {
                         ListaDados(n);
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1067,7 +1036,7 @@ int main(void)
                     {
                         Busca();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1076,7 +1045,7 @@ int main(void)
                     {
                         BuscaFornecedor();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1085,7 +1054,7 @@ int main(void)
                     {
                         BuscaProduto();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1094,7 +1063,7 @@ int main(void)
                     {
                         AlteraProduto();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1103,7 +1072,7 @@ int main(void)
                     {
                         AlteraPreco();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1112,7 +1081,7 @@ int main(void)
                     {
                         AlteraNomeProduto();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1121,7 +1090,7 @@ int main(void)
                     {
                       ExcluirProduto();
                     }else{
-                        printf("VocÍ n„o inseriu dados");
+                        printf("Voc√™ n√£o inseriu dados");
                     }
                 break;
 
@@ -1129,7 +1098,7 @@ int main(void)
 
                     if(opc == 0)
                     {
-                        printf("\n\n Numero Inv·lido\n");
+                        printf("\n\n Numero Inv√°lido\n");
                     }
 
                 break;
@@ -1166,7 +1135,7 @@ int main(void)
        return 1;
    }else{
 
-       printf("Escreva uma palavra para testar gravaÁ„o de arquivo: ");
+       printf("Escreva uma palavra para testar grava√ß√£o de arquivo: ");
        scanf("%s%*c",palavra);
 
        /*usando fprintf para armazenar a string no arquivo*/
@@ -1201,7 +1170,7 @@ int main(void)
     listar()
     abrir o arquivo
 
-    arquivo = fopen("arquivo.txt", "rb"); //funÁ„o de leitura
+    arquivo = fopen("arquivo.txt", "rb"); //fun√ß√£o de leitura
 
     //Contato - Tamanho exato da estrutura
     //Se encontrar a linha ele lista
@@ -1220,7 +1189,7 @@ int main(void)
         char nome[30];
 
         abrir o arquivo
-        arquivo = fopen("arquivo.txt", "rb"); //funÁ„o de leitura
+        arquivo = fopen("arquivo.txt", "rb"); //fun√ß√£o de leitura
 
         fflush(stdin); //limpar caracetr buffer
         printf("Digite o nome a pesquisar: ");
@@ -1235,7 +1204,7 @@ int main(void)
     }
 
     -------------------------------------------
-    Ler while(!feof(arq)) //Enquanto n„o chegar no final do arquivo leia
+    Ler while(!feof(arq)) //Enquanto n√£o chegar no final do arquivo leia
     {
         fgets(texto,255,arq);
         printf("%s", texto);
@@ -1282,7 +1251,7 @@ void Inserir()
             fprintf(arq,"Nome: %s\n", nome);
 
             fflush(stdin);
-            printf("Digite a sÈrie:  ");
+            printf("Digite a s√©rie:  ");
             scanf("%s%*c",&serie);
             fprintf(arq,"Serie: %s\n", serie);
 
@@ -1307,7 +1276,7 @@ void Inserir()
             scanf("%i",&QtdIdeal);
             fprintf(arq,"QtdIdeal %i\n", QtdIdeal);
 
-            printf("PossuÌ Pedido:  ");
+            printf("Possu√≠ Pedido:  ");
             scanf("%s%*c",&pedido);
             fprintf(arq,"Pedido: %s\n",pedido);
             fprintf(arq,"\n-------------------------------------------------\n\n");
@@ -1423,12 +1392,12 @@ return 0;
 
 #endif
 
-//FunÁ„o Parte 4
+/*Fun√ß√£o Parte 4*/
 
 #ifdef exe1
 
 /*
-    1.	FaÁa um programa que exiba os n˙meros Ìmpares de 50 atÈ 150.Utilize o laÁo for.
+    1.	Fa√ßa um programa que exiba os n√∫meros √≠mpares de 50 at√© 150.Utilize o la√ßo for.
 
 */
 int main()
@@ -1451,7 +1420,7 @@ int main()
 #ifdef exe2
 
 /*
-    2.	FaÁa um programa que exiba os n˙meros pares entre -10 e 50. Utilize o. Utilize o laÁo do while.
+    2.	Fa√ßa um programa que exiba os n√∫meros pares entre -10 e 50. Utilize o. Utilize o la√ßo do while.
 
 */
 
@@ -1479,7 +1448,7 @@ int main()
 #ifdef exe3
 
 /*
-    3.	FaÁa um programa que exiba os n˙meros que s„o m˙ltiplos de 5 entre 1 e 100. Utilize o laÁo while.
+    3.	Fa√ßa um programa que exiba os n√∫meros que s√£o m√∫ltiplos de 5 entre 1 e 100. Utilize o la√ßo while.
 
 */
 
@@ -1502,7 +1471,7 @@ int main()
 
 #ifdef exe4
 /*
-    4.	FaÁa um programa que exiba os n˙meros que s„o m˙ltiplos de 3 e s„o Ìmpares.
+    4.	Fa√ßa um programa que exiba os n√∫meros que s√£o m√∫ltiplos de 3 e s√£o √≠mpares.
 */
 
 int main()
@@ -1528,8 +1497,8 @@ int main()
 
 #ifdef exe5
 /*
-    5.	FaÁa um programa em C que solicite ao usu·rio a quantidade de termos que ele deseja exibir da seguinte sequÍncia:3, 6, 9, 12, 15,...
-		Obs.: Crie uma funÁ„o para garantir que essa quantidade deve ser deve ser maior que zero e representada pela vari·vel K.
+    5.	Fa√ßa um programa em C que solicite ao usu√°rio a quantidade de termos que ele deseja exibir da seguinte sequ√™ncia:3, 6, 9, 12, 15,...
+		Obs.: Crie uma fun√ß√£o para garantir que essa quantidade deve ser deve ser maior que zero e representada pela vari√°vel K.
 
 */
 int k,num,cont;
@@ -1566,8 +1535,8 @@ main()
 #ifdef exe6
 
 /*
-    6.	FaÁa um programa em C que solicite ao usu·rio a quantidade de termos que ele deseja exibir da seguinte sequÍncia: 1/4, 1/8, 1/12, 1/16, 1/20,...
-    Obs.: Crie uma funÁ„o para garantir que essa quantidade deve ser deve ser maior que zero e representada pela vari·vel K.
+    6.	Fa√ßa um programa em C que solicite ao usu√°rio a quantidade de termos que ele deseja exibir da seguinte sequ√™ncia: 1/4, 1/8, 1/12, 1/16, 1/20,...
+    Obs.: Crie uma fun√ß√£o para garantir que essa quantidade deve ser deve ser maior que zero e representada pela vari√°vel K.
 */
 int k,cont,num=1,den=0;
 
@@ -1587,7 +1556,7 @@ main()
 {
     setlocale(LC_ALL,"");
     do{
-        printf("Digite a quantidade>0 da seguÍncia: 1/4, 1/8, 1/12, 1/16, 1/20,...\n");
+        printf("Digite a quantidade>0 da segu√™ncia: 1/4, 1/8, 1/12, 1/16, 1/20,...\n");
         scanf("%i",&k);
         Mzero();
 
@@ -1606,8 +1575,8 @@ main()
 #ifdef exe7
 
 /*
-    7.	FaÁa um programa em C que solicite ao usu·rio a quantidade de termos que ele deseja exibir da seguinte sequÍncia: 2/5, 4/10, 6/15, 8/20, 10/25, 12/30,...
-    Obs.: Crie uma funÁ„o para garantir que essa quantidade deve ser deve ser maior que zero e representada pela vari·vel K.
+    7.	Fa√ßa um programa em C que solicite ao usu√°rio a quantidade de termos que ele deseja exibir da seguinte sequ√™ncia: 2/5, 4/10, 6/15, 8/20, 10/25, 12/30,...
+    Obs.: Crie uma fun√ß√£o para garantir que essa quantidade deve ser deve ser maior que zero e representada pela vari√°vel K.
 .
 */
 int k,cont,num,den=0;
@@ -1628,7 +1597,7 @@ main()
 {
     setlocale(LC_ALL,"");
     do{
-        printf("Digite a quantidade>0 da seguÍncia: 2/5, 4/10, 6/15, 8/20, 10/25, 12/30,...\n");
+        printf("Digite a quantidade>0 da segu√™ncia: 2/5, 4/10, 6/15, 8/20, 10/25, 12/30,...\n");
         scanf("%i",&k);
         Mzero();
 
@@ -1646,8 +1615,8 @@ main()
 #ifdef exe8
 
 /*
-    8.	FaÁa um programa em C que solicite ao usu·rio a quantidade de termos representada pela vari·vel X
-        que representa a quantidade de termos que o usu·rio deseja. H representa cada um desses n˙meros, calcule o produto dos X n˙meros.
+    8.	Fa√ßa um programa em C que solicite ao usu√°rio a quantidade de termos representada pela vari√°vel X
+        que representa a quantidade de termos que o usu√°rio deseja. H representa cada um desses n√∫meros, calcule o produto dos X n√∫meros.
         OBS: H deve ser maior ou igual a 15.
 */
 
@@ -1691,7 +1660,7 @@ main()
         printf(" Digite o numero: ");
         scanf("%i",&h);
         Mquinze();
-        printf(" %i∫ numero = %i\n\n",cont,h);
+        printf(" %i¬∫ numero = %i\n\n",cont,h);
 
         prod *=h;
     }
@@ -1710,16 +1679,16 @@ main()
 #ifdef exe9
 
 /*
-        A nota final de um exame È calculada a partir de trÍs notas atribuÌdas respectivamente a um trabalho
-        de laboratÛrio, uma avaliaÁ„o semestral e a um exame final. A mÈdia das trÍs notas mencionadas anteriormente
+        A nota final de um exame √© calculada a partir de tr√™s notas atribu√≠das respectivamente a um trabalho
+        de laborat√≥rio, uma avalia√ß√£o semestral e a um exame final. A m√©dia das tr√™s notas mencionadas anteriormente
         obedece aos pesos a seguir
 
-        Trabalho de LaboratÛrio         peso 2
-        AvaliaÁ„o Semestral             peso 3
+        Trabalho de Laborat√≥rio         peso 2
+        Avalia√ß√£o Semestral             peso 3
         Exame final                     peso 5
 
-        Mp = [(N1 x P1) + (N2 x P2) + (N3 x P3) + (N4 x P4)] ˜ (P1 + P2 + P3 + P4)
-        Calculo da mÈdia ponderada
+        Mp = [(N1 x P1) + (N2 x P2) + (N3 x P3) + (N4 x P4)] √∑ (P1 + P2 + P3 + P4)
+        Calculo da m√©dia ponderada
     */
 int TrabLab,AvalSem,ExamFinal, Med, mediafinal;
 char conc;
@@ -1729,7 +1698,7 @@ int Media()
 
         Med = (TrabLab*2)+(AvalSem*3)+(ExamFinal*5);
         Med = Med/10;
-        printf("\nNota da MÈdia Final: %i", Med);
+        printf("\nNota da M√©dia Final: %i", Med);
 
 
     }
@@ -1739,31 +1708,31 @@ char Conceito()
         if(Med>=8 && Med<=10)
         {
             conc = 'A';
-            printf("\nA nota conceitual È: %c", conc);
+            printf("\nA nota conceitual √©: %c", conc);
 
         }
         if(Med>=7 && Med<8)
         {
             conc = 'B';
-            printf("\nA nota conceitual È: %c", conc);
+            printf("\nA nota conceitual √©: %c", conc);
 
         }
         if(Med>=6 && Med<7)
         {
             conc = 'C';
-            printf("\nA nota conceitual È: %c", conc);
+            printf("\nA nota conceitual √©: %c", conc);
 
         }
         if(Med>=5 && Med<6)
         {
             conc = 'D';
-            printf("\nA nota conceitual È: %c", conc);
+            printf("\nA nota conceitual √©: %c", conc);
 
         }
         if(Med>=0 && Med<5)
         {
             conc = 'E';
-            printf("\nA nota conceitual È: %c", conc);
+            printf("\nA nota conceitual √©: %c", conc);
         }
 
     }
@@ -1773,9 +1742,9 @@ int main()
 {
 
     setlocale(LC_ALL,"Portuguese");
-    printf("Digite a nota do Trabalho de LaboratÛrio: ");
+    printf("Digite a nota do Trabalho de Laborat√≥rio: ");
     scanf("%i",&TrabLab);
-    printf("Digite a nota do AvaliaÁ„o Semestral: ");
+    printf("Digite a nota do Avalia√ß√£o Semestral: ");
     scanf("%i",&AvalSem);
     printf("Digite a nota do Exame final: ");
     scanf("%i",&ExamFinal);
@@ -1793,9 +1762,9 @@ int main()
 #endif
 
 /*
-    FaÁa um programa que receba trÍs notas de um aluno, calcule e mostre a mÈdia aritmÈtica
+    Fa√ßa um programa que receba tr√™s notas de um aluno, calcule e mostre a m√©dia aritm√©tica
     e a mensagem que segue a tabela abaixo. Para alunos de exame, calcule e mostre a nota que
-    dever· ser tirada no exame para aprovaÁ„o, considerando a mÈdia no exame È 6.0.
+    dever√° ser tirada no exame para aprova√ß√£o, considerando a m√©dia no exame √© 6.0.
 
 
 */
@@ -1814,7 +1783,7 @@ int Media()
         nota3 = v[2];
 
         Med = (nota1+nota2+nota3)/3;
-        printf("\nNota da MÈdia Final: %i\n\n\n", Med);
+        printf("\nNota da M√©dia Final: %i\n\n\n", Med);
 
 
     }
@@ -1823,13 +1792,13 @@ void VerificaNota ()
 {
     if(nota<0 || nota>10)
             {
-                printf(" VocÍ Digitou um valor inv·lido %i\n Digite valores entre 0 e 10 ", nota);
+                printf(" Voc√™ Digitou um valor inv√°lido %i\n Digite valores entre 0 e 10 ", nota);
                 system("pause");
                 return main();
             }
             else
             {
-                printf("  VocÍ Digitou a nota:%i\n",i+1);
+                printf("  Voc√™ Digitou a nota:%i\n",i+1);
                 v[i] = nota;
             }
 }
@@ -1886,15 +1855,15 @@ int main()
 
 #endif
 /*
-    3.	FaÁa um programa que mostre o menu de opÁıes a seguir, receba a opÁ„o do usu·rio e os dados necess·rios para executar cada operaÁ„o.
-    Menu de opÁıes:
-    1.	Somar dois n˙meros
-    2.	Raiz quadrada de um n˙mero
-    3.	Divis„o do primeiro pelo segundo n˙mero
-    4.	Um n˙mero positivo elevado ao quadrado.
+    3.	Fa√ßa um programa que mostre o menu de op√ß√µes a seguir, receba a op√ß√£o do usu√°rio e os dados necess√°rios para executar cada opera√ß√£o.
+    Menu de op√ß√µes:
+    1.	Somar dois n√∫meros
+    2.	Raiz quadrada de um n√∫mero
+    3.	Divis√£o do primeiro pelo segundo n√∫mero
+    4.	Um n√∫mero positivo elevado ao quadrado.
     5.	Encerrar o programa.
-    Digite a opÁ„o desejada:
-    Obs:Garante que sÛ sejam v·lidos  os n˙meros de 1 atÈ 5.As opÁıes de 1 atÈ 4 devem garantir o retorno ao menu de opÁıes  para uma nova escolha.
+    Digite a op√ß√£o desejada:
+    Obs:Garante que s√≥ sejam v√°lidos  os n√∫meros de 1 at√© 5.As op√ß√µes de 1 at√© 4 devem garantir o retorno ao menu de op√ß√µes  para uma nova escolha.
 
 */
 
@@ -1925,7 +1894,7 @@ int main()
         printf(" \n[1] Somar dois Numeros ");
         printf(" \n[2] Raiz quadrada de um numero ");
         printf(" \n[9] Para Sair\n");
-        printf("\nDigite uma opÁ„o: ");scanf("%d",&opc);
+        printf("\nDigite uma op√ß√£o: ");scanf("%d",&opc);
 
         switch(opc)
         {
@@ -1948,7 +1917,7 @@ int main()
             break;
 
             default:
-                printf("OpÁ„o Inv·lida!");
+                printf("Op√ß√£o Inv√°lida!");
             break;
         }
 
@@ -1961,10 +1930,10 @@ int main()
 #endif // exe1
 
 /*
-    1.	Crie uma funÁ„o chamada Notas para garantir o recebimento de cada uma das notas uma de cada vez. As notas dever„o ser maiores ou iguais a
-    zero e menores ou iguais a dez. Receba quatro valores referentes ‡s notas escolares de um aluno. Crie uma funÁ„o MÈdia para calcular a mÈdia aritmÈtica do aluno.
-    Exiba a mÈdia e se o aluno foi aprovado ou n„o no interior da funÁ„o main.
-    Ele ser· aprovado se a mÈdia for maior ou igual a 6. Caso contr·rio informe que ele est· reprovado.
+    1.	Crie uma fun√ß√£o chamada Notas para garantir o recebimento de cada uma das notas uma de cada vez. As notas dever√£o ser maiores ou iguais a
+    zero e menores ou iguais a dez. Receba quatro valores referentes √†s notas escolares de um aluno. Crie uma fun√ß√£o M√©dia para calcular a m√©dia aritm√©tica do aluno.
+    Exiba a m√©dia e se o aluno foi aprovado ou n√£o no interior da fun√ß√£o main.
+    Ele ser√° aprovado se a m√©dia for maior ou igual a 6. Caso contr√°rio informe que ele est√° reprovado.
 
 */
 
@@ -1974,7 +1943,7 @@ int ExibeMedia(int notas[4]);
 int Notas(int notas[4]);
 
 /*
-    FunÁ„o para garantir que as notas seja entre 0 e 10
+    Fun√ß√£o para garantir que as notas seja entre 0 e 10
 */
 int Notas(int notas[4])
 {
@@ -1998,7 +1967,7 @@ int Notas(int notas[4])
     return ExibeMedia(notas);
 }
 /*
-    Calcular MÈdia -> recebe a funÁ„o verificada pega cada posiÁ„o e extrai a mÈdia
+    Calcular M√©dia -> recebe a fun√ß√£o verificada pega cada posi√ß√£o e extrai a m√©dia
 */
 int ExibeMedia(int notas[4])
 {
@@ -2042,10 +2011,10 @@ return 0;
 #endif
 
 /*
-    2.	Crie uma funÁ„o que garanta o recebimento de n˙meros maiores que zero e menores ou iguais a 10.
-    Receba dois n˙meros utilizando est· funÁ„o e o terceiro n˙mero dever· ser a soma dos dois anteriores.
-    Crie a funÁ„o produto para calcular o produto destes trÍs n˙meros.
-    No interior da funÁ„o main verifique se o produto obtido for menor que 500, solicite novos dados.
+    2.	Crie uma fun√ß√£o que garanta o recebimento de n√∫meros maiores que zero e menores ou iguais a 10.
+    Receba dois n√∫meros utilizando est√° fun√ß√£o e o terceiro n√∫mero dever√° ser a soma dos dois anteriores.
+    Crie a fun√ß√£o produto para calcular o produto destes tr√™s n√∫meros.
+    No interior da fun√ß√£o main verifique se o produto obtido for menor que 500, solicite novos dados.
 
 */
 
@@ -2061,10 +2030,10 @@ int CalcProd(int Num, int Num2, int Num3);
 int VerificaNum (int num, int num2)
 {
     /*
-        Foi deifinido um vetor de 11 posiÁıes para garantir que os numeros estejam sempre nessa faixa de verificaÁ„o
-        Recebe o endereÁo do vetor
-       *ptr aponta para o primeiro conteudo do vetor e armazena na vari·vel posicao
-       o if no for verifica se determinada posiÁ„o existe comparando com a vari·vel num e num2
+        Foi deifinido um vetor de 11 posi√ß√µes para garantir que os numeros estejam sempre nessa faixa de verifica√ß√£o
+        Recebe o endere√ßo do vetor
+       *ptr aponta para o primeiro conteudo do vetor e armazena na vari√°vel posicao
+       o if no for verifica se determinada posi√ß√£o existe comparando com a vari√°vel num e num2
 
     */
     ptr = &vet[11];
@@ -2136,15 +2105,15 @@ int main(){
 /*
 
 
-    3.	Crie uma funÁ„o que garanta que cada lado deve ser maior que zero. Receba trÍs n˙meros que representam os lados de um tri‚ngulo.
-    Garanta no interior da funÁ„o main a existÍncia de um tri‚ngulo. Informe ao usu·rio se o tri‚ngulo È isÛscele, equil·tero ou escaleno.
+    3.	Crie uma fun√ß√£o que garanta que cada lado deve ser maior que zero. Receba tr√™s n√∫meros que representam os lados de um tri√¢ngulo.
+    Garanta no interior da fun√ß√£o main a exist√™ncia de um tri√¢ngulo. Informe ao usu√°rio se o tri√¢ngulo √© is√≥scele, equil√°tero ou escaleno.
 
-    ObservaÁıes:
+    Observa√ß√µes:
 
-    a.	Garantir que cada lado È menor que a soma dos outros dois lados.
-    b.	O tri‚ngulo È equil·tero quando todos os lados s„o iguais.
-    c.	O tri‚ngulo È isÛscele quando apenas dois lados s„o iguais.
-    d.	O tri‚ngulo È escaleno quando todos os lados s„o diferentes
+    a.	Garantir que cada lado √© menor que a soma dos outros dois lados.
+    b.	O tri√¢ngulo √© equil√°tero quando todos os lados s√£o iguais.
+    c.	O tri√¢ngulo √© is√≥scele quando apenas dois lados s√£o iguais.
+    d.	O tri√¢ngulo √© escaleno quando todos os lados s√£o diferentes
 
 
 
@@ -2157,9 +2126,9 @@ int a,b,c;
 char condicao1, condicao2, condicao3, condicaofinal;
 
 /*
-        SÛ ir· existir um tri‚ngulo se, somente se,
-        os seus lados obedeceram ‡ seguinte regra: um de seus lados deve ser maior que o valor absoluto (mÛdulo)
-        da diferenÁa dos outros dois lados e menor que a soma dos outros dois lados.
+        S√≥ ir√° existir um tri√¢ngulo se, somente se,
+        os seus lados obedeceram √† seguinte regra: um de seus lados deve ser maior que o valor absoluto (m√≥dulo)
+        da diferen√ßa dos outros dois lados e menor que a soma dos outros dois lados.
 
         | b - c | < a < b + c
         | a - c | < b < a + c
@@ -2249,9 +2218,9 @@ return 0;
 #endif
 
 /*
-    4.	Crie uma funÁ„o que garanta que um n˙mero È negativo. Receba dois n˙meros utilizando  esta funÁ„o.
-    Crie a funÁ„o Verifcamultiplos e verifique se estes dois n˙meros s„o m˙ltiplos ou n„o.
-    Exiba se s„o m˙ltiplos ou n„o no interior da funÁ„o VerificaMultiplos. Pesquise na internet o que s„o m˙ltiplos.
+    4.	Crie uma fun√ß√£o que garanta que um n√∫mero √© negativo. Receba dois n√∫meros utilizando  esta fun√ß√£o.
+    Crie a fun√ß√£o Verifcamultiplos e verifique se estes dois n√∫meros s√£o m√∫ltiplos ou n√£o.
+    Exiba se s√£o m√∫ltiplos ou n√£o no interior da fun√ß√£o VerificaMultiplos. Pesquise na internet o que s√£o m√∫ltiplos.
 
 
 */
@@ -2306,9 +2275,9 @@ void VerificaMultiplos(int m, int n)
 #endif // exe4
 
 /*
-    Crie a funÁ„o Esfera que receba da funÁ„o main o valor do raio e calcule o volume da esfera o seu volume v =(4*Pi*R3)/3.
-    Crie tambÈm uma funÁ„o para garantir que o raio deve ser maior que zero.
-    Exiba o  volume  da esfera no interior da funÁ„o main.
+    Crie a fun√ß√£o Esfera que receba da fun√ß√£o main o valor do raio e calcule o volume da esfera o seu volume v =(4*Pi*R3)/3.
+    Crie tamb√©m uma fun√ß√£o para garantir que o raio deve ser maior que zero.
+    Exiba o  volume  da esfera no interior da fun√ß√£o main.
 
 */
 
@@ -2333,7 +2302,7 @@ int Esfera(int raio)
 }
 
 /*
-Verifica se o numero È maior que zero e passa o valor para a funÁ„o esfera que calcula o valor
+Verifica se o numero √© maior que zero e passa o valor para a fun√ß√£o esfera que calcula o valor
 */
 int MaiorqZero(int num)
 {
@@ -2369,8 +2338,8 @@ int main()
 #endif
 
 /*
-    2.	Crie a funÁ„o verifica para verificar e exibir no seu interior se o n˙mero È positivo, negativo ou zero.
-    O n˙mero dever· ser do tipo inteiro e  dever· ser recebido  no interior  funÁ„o main...
+    2.	Crie a fun√ß√£o verifica para verificar e exibir no seu interior se o n√∫mero √© positivo, negativo ou zero.
+    O n√∫mero dever√° ser do tipo inteiro e  dever√° ser recebido  no interior  fun√ß√£o main...
 */
 
 #ifdef exe18
@@ -2406,9 +2375,9 @@ int main()
 }
 #endif
 /*
-    3.	Crie a funÁ„o Divis„o que receba da funÁ„o main dois n˙meros diferentes de zero que possibilitem o c·lculo da divis„o do primeiro pelo segundo.
-    Crie uma funÁ„o para garantir que os n˙meros devem ser diferentes de zero.
-    Exiba na funÁ„o main os n˙meros e o resultado obtido na funÁ„o Divis„o.
+    3.	Crie a fun√ß√£o Divis√£o que receba da fun√ß√£o main dois n√∫meros diferentes de zero que possibilitem o c√°lculo da divis√£o do primeiro pelo segundo.
+    Crie uma fun√ß√£o para garantir que os n√∫meros devem ser diferentes de zero.
+    Exiba na fun√ß√£o main os n√∫meros e o resultado obtido na fun√ß√£o Divis√£o.
 */
 #ifdef exe19
 
@@ -2448,5 +2417,472 @@ int main()
 
 #endif
 
+#ifdef exe28
 
+/*
+
+ 28.	Gere a seguinte sequ√™ncia abaixo para K termos.
+    K representa a quantidade de n√∫meros que o usu√°rio gostaria quer
+     fosse exibida dessa sequ√™ncia. Mostre tamb√©m a somat√≥ria apenas dos n√∫meros divis√≠veis por
+     3 dessa sequ√™ncia. Utilize o la√ßo do while para a entrada da quantidade K e um la√ßo for para
+     efetuar os c√°lculos solicitados.
+
+		1, 1, 2, 3, 5, 8, 13, 21,.....
+*/
+
+
+
+int ExibaSeq(int num)
+{
+   int i, vet[num];
+   int t1 = 0, t2 = 1;
+   int nextTerm = t1 + t2;
+
+   printf("\nSequ√™ncia Escolhida: \n");
+   printf("%d ", t2);
+
+   for (i = 3; i <= num+1; ++i)
+    {
+        printf(", %d ", nextTerm);
+        t1 = t2;
+        t2 = nextTerm;
+        nextTerm = t1 + t2;
+        vet[i] = nextTerm;
+    }
+    ExibeDivTres(vet, num);
+}
+
+int ExibeDivTres(int vet[], int num)
+{
+    int i;
+    printf("\n\n\nDivisivel por Tr√™s: \n");
+    for (i = 1; i <= num; ++i)
+    {
+
+        vet[1] = 1;
+        vet[2] = 1;
+        if(vet[i]%3 == 0){
+            printf(" %d, ", vet[i]);
+        }
+    }
+    printf("\n\n");
+    system("pause");
+}
+
+int main(){
+
+    Ptr;
+    int opc;
+
+    do
+    {
+        system("cls");
+        printf("\n\nDigite a quantidade de Termos que deseja exibir\n ");
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        if(opc != 0)
+        {
+            ExibaSeq(opc);
+
+        }else{
+            printf("\nVoc√™ optou por sair!");
+            printf("\n\n");
+        }
+
+    }while(opc != 0);
+
+
+
+return 0;
+
+}
+
+#endif // exe
+
+#ifdef exe29
+/*
+32.	Receba doze n√∫meros positivos e armazene no vetor A.
+    Ap√≥s a alimenta√ß√£o de todos os n√∫meros mostre apenas os
+    n√∫meros maiores que 121 que est√£o armazenados no vetor.
+*/
+
+int ExibaVet(int opc)
+{
+    int vet[8];
+    int i;
+
+    for(i=0;i<=8;i++)
+    {
+        vet[i] = opc;
+        if(vet[i]>121){
+            printf("Numero Maior que 121: %i", vet[i]);
+            break;
+        }
+        else{
+            break;
+        }
+    }
+}
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 8)
+    {
+        printf("\n\nDigite a quantidade de Termos que deseja exibir\n ");
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+
+        ExibaVet(opc);
+        i++;
+    }
+
+return 0;
+
+}
+
+#endif
+
+#ifdef exe30
+
+/*
+    33.	Leia oito elementos e armazene-os no vetor A. Construa o vetor B de mesma dimens√£o
+    com os elementos do vetor A multiplicados por 3. Apresente o conte√∫do dos dois vetores.
+*/
+int vetA[8];
+int vetB[8];
+
+int ExibaVet()
+{
+    int i;
+
+    for(i=1;i<=8;i++)
+    {
+        printf("Conte√∫do Vetor A: %i\n",vetA[i]);
+    }
+    printf("\n\n");
+    for(i=1;i<=8;i++)
+    {
+        printf("Conte√∫do Vetor B: %i\n",vetB[i]*3);
+    }
+}
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 8)
+    {
+        printf("\n\nDigite 8 Elementos para Armazenar no Vetor\n ");
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        vetA[i] = opc;
+        vetB[i] = vetA[i];
+
+        i++;
+    }
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe29
+
+#ifdef exe31
+
+/*
+    35. Armazene num vetor dez n√∫meros positivos. Exiba o conte√∫do do vetor.
+    Mostre o maior n√∫mero, quantas vezes ele foi digitado e em que posi√ß√µes ele apareceu dentro do vetor.
+*/
+int vet[10];
+
+void ExibaVet()
+{
+    int i, MaiorNumero=0, cont=0;
+    printf("\nDados do Vetor\n\n");
+    for(i=1;i<=10;i++)
+    {
+        printf("vetor: %i\n",vet[i]);
+        if(vet[i]>MaiorNumero)
+        {
+            MaiorNumero = vet[i];
+        }
+    }
+    for(i=1;i<=10;i++)
+    {
+        if(vet[i] == MaiorNumero)
+        {
+            cont +=1;
+        }
+    }
+    printf("\n");
+    printf("Maior Numero: %i\n", MaiorNumero);
+    printf("Numero de vezes que foi Digitado: %i\n", cont);
+    printf("\n");
+    for(i=1;i<=10;i++)
+    {
+        if(vet[i] == MaiorNumero)
+        {
+            printf("posi√ß√£o: %i\n", i);
+        }
+    }
+    printf("\n\n");
+}
+
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 10)
+    {
+        system("cls");
+        printf("\n\nDigite 10 Numeros para Armazenar no Vetor [%i]\n ", i);
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        vet[i] = opc;
+
+        i++;
+    }
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe31
+
+#ifdef exe32
+/*
+    36.	Armazene no vetor A 10 elementos positivos. Construa o vetor B do mesmo tipo e dimens√£o.
+        Cada elemento do vetor B deve ser o valor negativo do elemento correspondente do vetor A.
+        Desta forma, se em A [1] estiver armazenado o elemento 8 deve estar em B [1] o valor ‚Äì8,
+        e assim por diante. Apresentar o conte√∫do dos dois vetores.
+*/
+int vetA[6];
+int vetB[6];
+
+
+int ExibaVet(){
+
+    int i;
+
+    printf("\nValores nos vetores\n\n");
+
+    for(i=1;i<=6;i++)
+    {
+        printf("Valor: %i posi√ß√£o: %i\n", vetA[i], i);
+    }
+    printf("\n\n");
+    for(i=1;i<=6;i++)
+    {
+        printf("Valor: %i posi√ß√£o: %i\n", vetB[i], i);
+    }
+}
+
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 6)
+    {
+        system("cls");
+        printf("\n\nDigite 10 Numeros para Armazenar no Vetor [%i]\n ", i);
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        vetA[i] = opc;
+        vetB[i] = opc*(-1);
+
+        i++;
+    }
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe32
+
+#ifdef exe33
+
+/*
+    39.	Leia tr√™s vetores (A, B e C) de uma dimens√£o com 5 elementos cada.
+        Construa o vetor D, sendo este a jun√ß√£o dos tr√™s outros vetores. Armazene no vetor D o primeiro elemento do vetor
+        A depois do B e do C e assim sucessivamente.  Apresentar o conte√∫do de todos os vetores.
+        Exiba quantas vezes apareceram n√∫meros negativos no vetor D.
+*/
+
+
+int vetA[5];
+int vetB[5];
+int vetC[5];
+int vetD[15];
+
+void OrdenaVet(int vet[], int n)
+{
+    int i, j, aux;
+
+  for (i=0; i<n; i++)
+    for (j=0; j<n-i-1; j++)
+    if (vet[j]>vet[j+1])
+    {
+        aux = vet[j];
+        vet[j] = vet[j+1];
+        vet[j+1] = aux;
+    }
+
+    printf("\n");
+    for(i=0; i<n; i++)
+    {
+        printf("Vetor Ordenado [%i]: %i\n ", i, vet[i]);
+    }
+}
+
+int ExibaVet(){
+
+    int i;
+
+    printf("\nValores nos vetores\n\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetA[i] = i;
+        printf("Valor: %i\n", vetA[i]);
+    }
+
+    printf("\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetB[i] = i+11;
+        printf("Valor: %i\n", vetB[i]);
+
+    }
+    printf("\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetC[i] = i+82;
+        printf("Valor: %i\n", vetC[i]);
+
+    }
+    printf("\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetD[i*3] = vetA[i];
+    }
+
+    for(i=0;i<5;i++)
+    {
+        vetD[i*3+1] = vetB[i];
+    }
+
+    for(i=0;i<5;i++)
+    {
+        vetD[i*3+2] = vetC[i];
+    }
+
+
+    for(i=0;i<15;i++)
+    {
+        printf("Vetor D [%i] : %i \n", i, vetD[i]);
+    }
+
+    OrdenaVet(vetD, 15);
+
+}
+
+
+int main(){
+
+    Ptr;
+
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe33
+
+#ifdef exe34
+/*
+    41.	Elabore um programa que efetue o c√°lculo de uma tabuada de um n√∫mero
+          qualquer e armazene os resultados no vetor A de uma dimens√£o para 10 elementos.
+          O usu√°rio dever√° digitar o n√∫mero e o programa dever√° construir e exibir a tabuada correspondente.
+
+*/
+
+vet[10];
+
+int CalcTabuada(int num)
+{
+    int i;
+    for(i=0;i<=10;i++)
+    {
+        vet[i] = num*i;
+    }
+
+    printf("\n\n");
+
+    for(i=0;i<=10;i++)
+    {
+
+        printf("| %i X %i = %i\n", num, i, vet[i]);
+    }
+    printf("\n\n");
+    system("pause");
+}
+
+void mostra()
+{
+     printf(" **************************************************\n");
+     printf("                     TABUADA                    \n");
+     printf(" **************************************************\n");
+
+}
+
+int main(){
+Ptr;
+
+    int opc, i=1;
+
+    do
+    {
+        system("cls");
+        mostra();
+        printf("\n Digite o Numero da Tabuada que voc√™ Quer saber\n ");
+        printf("\n Ou [0] para Sair\n ");
+        printf("\n Digite>>> ");
+        scanf("%i",&opc);
+
+        if(opc != 0){
+            CalcTabuada(opc);
+        }else{
+
+        printf("\n\n");
+        printf("Voc√™ optou por Sair!");
+        printf("\n\n");
+
+        }
+
+    }while(opc > 0);
+
+return 0;
+
+}
+#endif // exe34
 
