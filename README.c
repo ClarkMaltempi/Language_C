@@ -1,5 +1,15 @@
 # Linguagem-C Project
 
+/*
+  Script e resolução de exercícios na Linguagem C, aplicando os conhecimentos e soluções propostas pela linguagem.
+  *
+  *
+  *
+  *
+  *
+  *
+  *
+*/
 
 1 #include <stdio.h>
 2 #include <stdlib.h>
