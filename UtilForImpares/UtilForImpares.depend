@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1651245178 source:c:\users\adm\downloads\project c\utilforimpares\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<conio.h>
+
