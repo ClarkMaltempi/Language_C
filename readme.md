@@ -126,24 +126,24 @@ do
 
  do
  {
-    printf("\n\n Digite a quantidade de Funcionarios que deseja cadastrar\n");
-    printf("\n Digite [0] para Sair\n\n");
-    printf(" \n Digite>>> ");
-    scanf("%i",&k);
+      printf("\n\n Digite a quantidade de Funcionarios que deseja cadastrar\n");
+      printf("\n Digite [0] para Sair\n\n");
+      printf(" \n Digite>>> ");
+      scanf("%i",&k);
 
- if(k != 0)
- {
-   VerificaNum(k);
- }
-                      
- if(k > 0)
- {
-   cadastroSal(k);
- }
-  
- printf("\n");
- system("pause");
-  
+       if(k != 0)
+       {
+         VerificaNum(k);
+       }
+
+       if(k > 0)
+       {
+         cadastroSal(k);
+       }
+
+       printf("\n");
+       system("pause");
+
   
  }while(k != 0);
 
