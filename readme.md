@@ -135,14 +135,16 @@ do
  {
    VerificaNum(k);
  }
+                      
  if(k > 0)
  {
    cadastroSal(k);
  }
+  
  printf("\n");
  system("pause");
-
-
+  
+  
  }while(k != 0);
 
 
