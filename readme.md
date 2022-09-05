@@ -33,13 +33,15 @@
  
  
  
- 
+ </br>
  24. Receba a quantidade de salários de K indivíduos. K representa essa quantidade e
 deve ser digitada pelo usuário.
 A variável Salário armazena cada uma dos K salários digitados. Calcule e mostre
 a somatória dos salários superiores a 3 salários-mínimos e inferior ou igual a 7 salários-mínimos.
 114 Exiba também o maior e o menor salário encontrado. Utilize o laço while para a
 entrada da quantidade K e um laço while para efetuar os cálculos e as comparações solicitadas.
+  
+  </br>
  ```c
  #ifdef exe24
  
@@ -157,13 +159,13 @@ do
 ```
 
 
-
+</br>
 25.	Receba a quantidade de pesos de N pessoas. N representa essa quantidade e deve ser digitada pelo usuário.
     A variável P representa cada peso digitado. Calcule e mostre a média dos pesos superiores ou iguais a 70 quilos
     e inferiores ou iguais a 85,5 e a quantidade de pessoas que apresentam pesos superiores a 75 quilos. Exiba também o menor,
     a quantidade de vezes que o menor peso foi encontrado e o maior peso encontrado. Utilize o laço while para a entrada da quantidade N e um
     laço do while para efetuar os cálculos e as comparações solicitadas.
-    
+    </br>
     
  ```c   
  
@@ -275,14 +277,14 @@ int main()
  
  
  
- 
+ </br>
 26.	Em uma pesquisa de campo, uma editora solicitou os seguintes dados para os entrevistados: sexo,
     idade e quantidade de livros que leu no ano anterior.  Faça um programa que leia os dados digitados
-    pelo usuário, sendo que deverão ser solicitados dados até que a idade digitada seja um valor negativo. Depois, calcule e imprima:
-    a)	A quantidade total de livros lidos pelos entrevistados menores de 10 anos.
-    b)	A quantidade de mulheres que leram 5 livros ou mais.
-    c)   A média de idade dos homens que leram menos que 5 livros.
-    d) O percentual de pessoas que não leram LIVROS.
+    pelo usuário, sendo que deverão ser solicitados dados até que a idade digitada seja um valor negativo. Depois, calcule e imprima:</br>
+    a)	A quantidade total de livros lidos pelos entrevistados menores de 10 anos.</br>
+    b)	A quantidade de mulheres que leram 5 livros ou mais.</br>
+    c)   A média de idade dos homens que leram menos que 5 livros.</br>
+    d) O percentual de pessoas que não leram LIVROS.</br>
 
 
     
