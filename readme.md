@@ -285,17 +285,25 @@ int main()
     d) O percentual de pessoas que não leram LIVROS.
 
 
-    Exemplo: como um vetor de registros pode ser representado.
+    
+
+
+  ```c   
+  
+   /*
+        Exemplo: como um vetor de registros pode ser representado.
      sexo       sexo     sexo      sexo
      idade      idade    idade     idade
      livros     livros   livros    livros
        0          1        2         N
        
     Cada posição do vetor armazena um conjunto de informações diferentes.
-
-
-  ```c   
-  
+   
+ 
+   */
+   
+   
+   
   #ifdef exe26
   
   
