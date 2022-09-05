@@ -654,11 +654,524 @@ int main()
    
  >Exe 13
  
+ ```c
+	 
+/*
+    1.	Crie uma função chamada Notas para garantir o recebimento de cada uma das notas uma de cada vez. As notas deverão ser maiores ou iguais a
+    zero e menores ou iguais a dez. Receba quatro valores referentes às notas escolares de um aluno. Crie uma função Média para calcular a média aritmética do aluno.
+    Exiba a média e se o aluno foi aprovado ou não no interior da função main.
+    Ele será aprovado se a média for maior ou igual a 6. Caso contrário informe que ele está reprovado.
+*/
+
+#ifdef exe13
+
+int ExibeMedia(int notas[4]);
+int Notas(int notas[4]);
+
+/*
+    Função para garantir que as notas seja entre 0 e 10
+*/
+int Notas(int notas[4])
+{
+    int i;
+
+    for(i=0;i<4;i++)
+    {
+        if(notas[i]>=0 && notas[i]<=10)
+        {
+            notas[i] = notas[i];
+        }
+        else
+        {
+            system("cls");
+            printf("******Esse valor eh invalido, somente eh aceito Notas entre 0 e 10\n");
+            printf("Digite Novamente");
+            return main ();
+        }
+    }
+
+    return ExibeMedia(notas);
+}
+/*
+    Calcular Média -> recebe a função verificada pega cada posição e extrai a média
+*/
+int ExibeMedia(int notas[4])
+{
+    int media;
+    int soma=0;
+    int i;
+
+    for(i=0;i<4;i++)
+    {
+        soma += notas[i];
+    }
+    media = soma/4;
+
+    if(media>=6)
+    {
+        return printf("\n*******Aluno Aprovado!! Nota: %d *********",media);
+    }
+    else
+    {
+        return printf("\n*******Aluno Reprovado!! Nota: %d ********",media);
+    }
+
+}
+
+int main (){
+
+    int notaAluno,i=0;
+    int nota[4];
+
+    while(i<4){
+        printf("Digite a nota do aluno: ");
+        scanf("%d",&notaAluno);
+        nota[i] = notaAluno;
+        i++;
+    }
+    Notas(nota);
+
+return 0;
+}
+
+#endif
+
+	 
+	 
+```
    
+>Exe 14
+	 
+	 
+```c
+	 
+/*
+    2.	Crie uma função que garanta o recebimento de números maiores que zero e menores ou iguais a 10.
+    Receba dois números utilizando está função e o terceiro número deverá ser a soma dos dois anteriores.
+    Crie a função produto para calcular o produto destes três números.
+    No interior da função main verifique se o produto obtido for menor que 500, solicite novos dados.
+*/
+
+
+#ifdef exe14
+int vet[11]={0,1,2,3,4,5,6,7,8,9,10};
+
+int *ptr, posicao, i, num=0, num2=0, num3=0, produto;
+int VerificaNum (int num, int num2);
+int CalcProd(int Num, int Num2, int Num3);
+
+
+int VerificaNum (int num, int num2)
+{
+    /*
+        Foi deifinido um vetor de 11 posições para garantir que os numeros estejam sempre nessa faixa de verificação
+        Recebe o endereço do vetor
+       *ptr aponta para o primeiro conteudo do vetor e armazena na variável posicao
+       o if no for verifica se determinada posição existe comparando com a variável num e num2
+    */
+    ptr = &vet[11];
+    posicao = *ptr;
+
+    for(i=0;i<11;i++)
+    {
+       if(posicao+i == num)
+        {
+            num = posicao+i;
+        }
+
+        if(posicao+i == num2)
+        {
+            num2 = posicao+i;
+        }
+    }
+        if(num==0 || num2==0 || num<0 || num2<0 || num>10 || num2>10 )
+        {
+            return '1';
+        }
+        else
+        {
+            num3 = num + num2;
+            return CalcProd(num, num2,num3);
+        }
+}
+
+
+int CalcProd(int Num, int Num2, int Num3)
+{
+    produto = Num*Num2*Num3;
+    return produto;
+
+}
+
+int main(){
+
+
+    printf("\n\n");
+    printf("VERIFICA QUAL EH O PRODUTO DE UM NUMERO");
+    printf("\n\n");
+    do
+    {
+    printf("\nDigite o numero: ");
+    scanf("%d",&num);
+    printf("\nDigite o numero: ");
+    scanf("%d",&num2);
+
+    if(VerificaNum (num, num2)== '1' )
+    {
+        printf("\n******NUMERO INVALIDO DIGITE NUMEROS DE 0 A 10*****");
+        printf("\n\n");
+    }
+    else
+    {
+        printf("\n\n");
+        printf("\n O Produto do Numero: %d\n",VerificaNum (num, num2));
+    }
+
+    }while (VerificaNum (num, num2) < 500);
+
+
+    return 0;
+}
+
+#endif
+	 
+
+	 	 
+```
    
-   
-   
-   
+>Exe 15
+	 
+```c
+	 
+/*
+    3.	Crie uma função que garanta que cada lado deve ser maior que zero. Receba três números que representam os lados de um triângulo.
+    Garanta no interior da função main a existência de um triângulo. Informe ao usuário se o triângulo é isóscele, equilátero ou escaleno.
+    Observações:
+    a.	Garantir que cada lado é menor que a soma dos outros dois lados.
+    b.	O triângulo é equilátero quando todos os lados são iguais.
+    c.	O triângulo é isóscele quando apenas dois lados são iguais.
+    d.	O triângulo é escaleno quando todos os lados são diferentes
+*/
+
+#ifdef exe15
+
+
+int a,b,c;
+char condicao1, condicao2, condicao3, condicaofinal;
+
+/*
+        Só irá existir um triângulo se, somente se,
+        os seus lados obedeceram à seguinte regra: um de seus lados deve ser maior que o valor absoluto (módulo)
+        da diferença dos outros dois lados e menor que a soma dos outros dois lados.
+        | b - c | < a < b + c
+        | a - c | < b < a + c
+        | a - b | < c < a + b
+*/
+int main(){
+
+    printf("\n\n");
+
+
+    printf("\n\tVERIFICA TRIANGULO");
+    printf("\n\n");
+
+    printf("DIGITE O LADO A: ");
+    scanf("%d",&a);
+    printf("DIGITE O LADO B: ");
+    scanf("%d",&b);
+    printf("DIGITE O LADO C: ");
+    scanf("%d",&c);
+
+    if (b - c  < a && a < b + c)
+    {
+        condicao1 = 'v';
+    }
+    else
+    {
+        condicao1 = 'n';
+    }
+    if (a - c < b && b < a + c)
+    {
+        condicao2 = 'v';
+    }
+    else
+    {
+        condicao2 = 'n';
+    }
+    if (a - b < c && c < a + b)
+    {
+        condicao3 = 'v';
+    }
+    else
+    {
+        condicao3 = 'n';
+    }
+
+    if(condicao1 == 'v' && condicao2 =='v' && condicao3 == 'v')
+    {
+        printf("\n\n");
+        printf("Este eh um Triangulo!");
+        condicaofinal = 'v';
+
+    }
+    if(condicao1 == 'n' || condicao2 == 'n' || condicao3 == 'n')
+    {
+        printf("\n\n");
+        printf("Verifique os numeros digitados, eles nao representam valores que formam um triangulo");
+        printf("\n\n");
+    }
+
+
+        if(condicaofinal == 'v')
+        {
+                if (a == b || c == b || a == c)
+                {
+                    printf("\n\n");
+                    printf("\nDo tipo: Triangulo Isoceles");
+                    printf("\n\n");
+                }
+
+                if (a == b && c == b && a == c)
+                {
+                    printf("\n\n");
+                    printf("\nDo tipo: Triangulo Equilatero");
+                    printf("\n\n");
+                }
+
+                if (a != b && c != b && a != c)
+                {
+                    printf("\n\n");
+                    printf("\nDo tipo: Triangulo Escaleno");
+                    printf("\n\n");
+                }
+        }
+return 0;
+}
+
+#endif	 
+	 
+	 
+```
+	 
+	 
+>Exe 16
+	 
+```c
+	 
+/*
+    4.	Crie uma função que garanta que um número é negativo. Receba dois números utilizando  esta função.
+    Crie a função Verifcamultiplos e verifique se estes dois números são múltiplos ou não.
+    Exiba se são múltiplos ou não no interior da função VerificaMultiplos. Pesquise na internet o que são múltiplos.
+*/
+
+#ifdef exe16
+int m,n,k;
+
+/*
+    VerificaMultiplos(a,b);
+*/
+
+int RecebaNumero(int a, int b)
+{
+    if(a<0 && b<0)
+    {
+        return VerificaMultiplos(a, b);
+    }
+    else
+    {
+        return printf("\n*****Numero invalido!! so sao aceitos numeros negativos");
+    }
+
+}
+
+void VerificaMultiplos(int m, int n)
+{
+
+    k = m/n;
+    if(k*n == m)
+    {
+        printf("\nEsses Dois Numeros sao multiplos! ");
+    }
+    else
+    {
+        printf("\nEsses Numeros nao sao multiplos! ");
+    }
+
+}
+
+    int main()
+{
+
+    printf("\n\n");
+    printf("\nDigite o numero: ");
+    scanf("%d",&m);
+    printf("\nDigite o numero: ");
+    scanf("%d",&n);
+    RecebaNumero(m, n);
+
+}
+
+#endif // exe4	 
+	 	 
+	 
+``` 
+	 
+>Exe 17	 
+	 
+```c
+	 
+#ifdef exe17
+/*
+    CALCULA O VOLUME DE UMA ESFERA
+*/
+int raio=0;
+int num=0;
+
+int Esfera(int raio);
+int MaiorqZero(int num);
+
+int Esfera(int raio)
+{
+    float volume;
+    raio = pow(raio,3);
+    volume = 4.0 / 3.0*M_PI*raio;
+
+    return printf("\n%.2f",volume);
+}
+
+/*
+Verifica se o numero é maior que zero e passa o valor para a função esfera que calcula o valor
+*/
+int MaiorqZero(int num)
+{
+    if(num<=0)
+    {
+        printf("*******NUMERO INVALIDO!******\n");
+        printf("****Digite outro numero!****\n\n");
+        return main();
+    }
+    else
+    {
+        return Esfera(num);
+    }
+
+}
+
+int main()
+{
+
+
+    printf("CALCULA O VOLUME DE UMA ESFERA\n\n");
+
+
+    printf("Insira o valor do raio da esfera:  ");
+    scanf(" %d", &raio);
+    MaiorqZero(raio);
+
+    printf("\n\n");
+
+    return 0;
+}
+
+#endif	 
+
+	 
+	 
+```
+	 
+					   
+>Exe 18
+	 
+```c
+	 
+#ifdef exe18
+void VerificaNum(int num);
+int num=0;
+
+void VerificaNum(int num)
+{
+    if(num>0)
+    {
+      printf(" \nEste numero e POSITIVO\n ");
+    }
+    if(num==0)
+    {
+      printf(" \nVoce Digitou ZERO\n ");
+    }
+    if(num<0)
+    {
+      printf(" \nVoce Digitou NEGATIVO\n ");
+    }
+
+}
+
+int main()
+{
+
+    printf("VERIFICA SE NUMERO E POSITIVO OU NEGATIVO\n\n");
+    printf("Insira um Numero:  ");
+    scanf(" %d", &num);
+    VerificaNum(num);
+
+    return 0;
+}
+#endif
+
+	      
+```	 
+					   
+>Exe 19
+	
+
+```c
+	 
+/*
+    3.	Crie a função Divisão que receba da função main dois números diferentes de zero que possibilitem o cálculo da divisão do primeiro pelo segundo.
+    Crie uma função para garantir que os números devem ser diferentes de zero.
+    Exiba na função main os números e o resultado obtido na função Divisão.
+*/
+#ifdef exe19
+
+void Divisao (int a, int b);
+int a,b;
+
+void Divisao (int a, int b)
+{
+    int c;
+    if(a==0 || b==0)
+    {
+        printf("Nao e possivel fazer divisao por 0");
+        return main();
+    }
+    else
+    {
+        c = a / b;
+        return printf("O valor da Divisao %d", c);
+    }
+}
+
+int main()
+{
+
+
+    printf("\nDIVISAO\n\n");
+    printf("Digite um numero para dividir: ");
+    scanf("%d", &a);
+    printf("Digite o segundo numero para quanto quer dividir: ");
+    scanf("%d", &b);
+    Divisao(a,b);
+
+
+    return 0;
+}
+
+
+#endif
+	 
+	 	 
+```
+	
+					   
    
  >Exe 24
   
@@ -1968,5 +2481,551 @@ return 0;
  ```
    
    
-  
+ >Exe 28
+	 
+```c
+	 
+#ifdef exe28
+
+/*
+ 28.	Gere a seguinte sequência abaixo para K termos.
+    K representa a quantidade de números que o usuário gostaria quer
+     fosse exibida dessa sequência. Mostre também a somatória apenas dos números divisíveis por
+     3 dessa sequência. Utilize o laço do while para a entrada da quantidade K e um laço for para
+     efetuar os cálculos solicitados.
+		1, 1, 2, 3, 5, 8, 13, 21,.....
+*/
+
+
+
+int ExibaSeq(int num)
+{
+   int i, vet[num];
+   int t1 = 0, t2 = 1;
+   int nextTerm = t1 + t2;
+
+   printf("\nSequência Escolhida: \n");
+   printf("%d ", t2);
+
+   for (i = 3; i <= num+1; ++i)
+    {
+        printf(", %d ", nextTerm);
+        t1 = t2;
+        t2 = nextTerm;
+        nextTerm = t1 + t2;
+        vet[i] = nextTerm;
+    }
+    ExibeDivTres(vet, num);
+}
+
+int ExibeDivTres(int vet[], int num)
+{
+    int i;
+    printf("\n\n\nDivisivel por Três: \n");
+    for (i = 1; i <= num; ++i)
+    {
+
+        vet[1] = 1;
+        vet[2] = 1;
+        if(vet[i]%3 == 0){
+            printf(" %d, ", vet[i]);
+        }
+    }
+    printf("\n\n");
+    system("pause");
+}
+
+int main(){
+
+    Ptr;
+    int opc;
+
+    do
+    {
+        system("cls");
+        printf("\n\nDigite a quantidade de Termos que deseja exibir\n ");
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        if(opc != 0)
+        {
+            ExibaSeq(opc);
+
+        }else{
+            printf("\nVocê optou por sair!");
+            printf("\n\n");
+        }
+
+    }while(opc != 0);
+
+
+
+return 0;
+
+}
+
+#endif // exe	 
+	 
+	 
+ 
+```
+	 
+	 
+>Exe 29
+	 
+```c
+	 
+#ifdef exe29
+/*
+32.	Receba doze números positivos e armazene no vetor A.
+    Após a alimentação de todos os números mostre apenas os
+    números maiores que 121 que estão armazenados no vetor.
+*/
+
+int ExibaVet(int opc)
+{
+    int vet[8];
+    int i;
+
+    for(i=0;i<=8;i++)
+    {
+        vet[i] = opc;
+        if(vet[i]>121){
+            printf("Numero Maior que 121: %i", vet[i]);
+            break;
+        }
+        else{
+            break;
+        }
+    }
+}
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 8)
+    {
+        printf("\n\nDigite a quantidade de Termos que deseja exibir\n ");
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+
+        ExibaVet(opc);
+        i++;
+    }
+
+return 0;
+
+}
+
+#endif	 
+
+	 
+	 
+```
+		
+		
+>Exe 30
+	 
+```c
+	 
+#ifdef exe30
+
+/*
+    33.	Leia oito elementos e armazene-os no vetor A. Construa o vetor B de mesma dimensão
+    com os elementos do vetor A multiplicados por 3. Apresente o conteúdo dos dois vetores.
+*/
+int vetA[8];
+int vetB[8];
+
+int ExibaVet()
+{
+    int i;
+
+    for(i=1;i<=8;i++)
+    {
+        printf("Conteúdo Vetor A: %i\n",vetA[i]);
+    }
+    printf("\n\n");
+    for(i=1;i<=8;i++)
+    {
+        printf("Conteúdo Vetor B: %i\n",vetB[i]*3);
+    }
+}
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 8)
+    {
+        printf("\n\nDigite 8 Elementos para Armazenar no Vetor\n ");
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        vetA[i] = opc;
+        vetB[i] = vetA[i];
+
+        i++;
+    }
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe29	 
+	 
+	 
+	 	 
+	 
+```
+	 
+>Exe 31
+	 
+```c
+	 
+#ifdef exe31
+
+/*
+    35. Armazene num vetor dez números positivos. Exiba o conteúdo do vetor.
+    Mostre o maior número, quantas vezes ele foi digitado e em que posições ele apareceu dentro do vetor.
+*/
+int vet[10];
+
+void ExibaVet()
+{
+    int i, MaiorNumero=0, cont=0;
+    printf("\nDados do Vetor\n\n");
+    for(i=1;i<=10;i++)
+    {
+        printf("vetor: %i\n",vet[i]);
+        if(vet[i]>MaiorNumero)
+        {
+            MaiorNumero = vet[i];
+        }
+    }
+    for(i=1;i<=10;i++)
+    {
+        if(vet[i] == MaiorNumero)
+        {
+            cont +=1;
+        }
+    }
+    printf("\n");
+    printf("Maior Numero: %i\n", MaiorNumero);
+    printf("Numero de vezes que foi Digitado: %i\n", cont);
+    printf("\n");
+    for(i=1;i<=10;i++)
+    {
+        if(vet[i] == MaiorNumero)
+        {
+            printf("posição: %i\n", i);
+        }
+    }
+    printf("\n\n");
+}
+
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 10)
+    {
+        system("cls");
+        printf("\n\nDigite 10 Numeros para Armazenar no Vetor [%i]\n ", i);
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        vet[i] = opc;
+
+        i++;
+    }
+    ExibaVet();
+
+return 0;
+
+}	 
+	 
+	 
+```
+		 
+		 
+>Exe 31
+	 
+```c
+	 
+#ifdef exe32
+/*
+    36.	Armazene no vetor A 10 elementos positivos. Construa o vetor B do mesmo tipo e dimensão.
+        Cada elemento do vetor B deve ser o valor negativo do elemento correspondente do vetor A.
+        Desta forma, se em A [1] estiver armazenado o elemento 8 deve estar em B [1] o valor –8,
+        e assim por diante. Apresentar o conteúdo dos dois vetores.
+*/
+int vetA[6];
+int vetB[6];
+
+
+int ExibaVet(){
+
+    int i;
+
+    printf("\nValores nos vetores\n\n");
+
+    for(i=1;i<=6;i++)
+    {
+        printf("Valor: %i posição: %i\n", vetA[i], i);
+    }
+    printf("\n\n");
+    for(i=1;i<=6;i++)
+    {
+        printf("Valor: %i posição: %i\n", vetB[i], i);
+    }
+}
+
+
+int main(){
+
+    Ptr;
+    int opc, i=1;
+
+    while(i <= 6)
+    {
+        system("cls");
+        printf("\n\nDigite 10 Numeros para Armazenar no Vetor [%i]\n ", i);
+        printf("\nOu [0] para Sair\n ");
+        printf("\nDigite>>> ");
+        scanf("%i",&opc);
+        vetA[i] = opc;
+        vetB[i] = opc*(-1);
+
+        i++;
+    }
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe32
+	 
+	 
+	 
+	 
+```
+		
+		
+>Exe 33
+	 
+```c
+	 
+
+#ifdef exe33
+
+/*
+    39.	Leia três vetores (A, B e C) de uma dimensão com 5 elementos cada.
+        Construa o vetor D, sendo este a junção dos três outros vetores. Armazene no vetor D o primeiro elemento do vetor
+        A depois do B e do C e assim sucessivamente.  Apresentar o conteúdo de todos os vetores.
+        Exiba quantas vezes apareceram números negativos no vetor D.
+*/
+
+
+int vetA[5];
+int vetB[5];
+int vetC[5];
+int vetD[15];
+
+void OrdenaVet(int vet[], int n)
+{
+    int i, j, aux;
+
+  for (i=0; i<n; i++)
+    for (j=0; j<n-i-1; j++)
+    if (vet[j]>vet[j+1])
+    {
+        aux = vet[j];
+        vet[j] = vet[j+1];
+        vet[j+1] = aux;
+    }
+
+    printf("\n");
+    for(i=0; i<n; i++)
+    {
+        printf("Vetor Ordenado [%i]: %i\n ", i, vet[i]);
+    }
+}
+
+int ExibaVet(){
+
+    int i;
+
+    printf("\nValores nos vetores\n\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetA[i] = i;
+        printf("Valor: %i\n", vetA[i]);
+    }
+
+    printf("\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetB[i] = i+11;
+        printf("Valor: %i\n", vetB[i]);
+
+    }
+    printf("\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetC[i] = i+82;
+        printf("Valor: %i\n", vetC[i]);
+
+    }
+    printf("\n");
+
+    for(i=0;i<5;i++)
+    {
+        vetD[i*3] = vetA[i];
+    }
+
+    for(i=0;i<5;i++)
+    {
+        vetD[i*3+1] = vetB[i];
+    }
+
+    for(i=0;i<5;i++)
+    {
+        vetD[i*3+2] = vetC[i];
+    }
+
+
+    for(i=0;i<15;i++)
+    {
+        printf("Vetor D [%i] : %i \n", i, vetD[i]);
+    }
+
+    OrdenaVet(vetD, 15);
+
+}
+
+
+int main(){
+
+    Ptr;
+
+    ExibaVet();
+
+return 0;
+
+}
+
+#endif // exe33
+	 
+	 
+	 
+```
+		
+	
+>Exe 34
+	 
+```c
+	 
+	 
+#ifdef exe34
+/*
+    41.	Elabore um programa que efetue o cálculo de uma tabuada de um número
+          qualquer e armazene os resultados no vetor A de uma dimensão para 10 elementos.
+          O usuário deverá digitar o número e o programa deverá construir e exibir a tabuada correspondente.
+*/
+
+vet[10];
+
+int CalcTabuada(int num)
+{
+    int i;
+    for(i=0;i<=10;i++)
+    {
+        vet[i] = num*i;
+    }
+
+    printf("\n\n");
+
+    for(i=0;i<=10;i++)
+    {
+
+        printf("| %i X %i = %i\n", num, i, vet[i]);
+    }
+    printf("\n\n");
+    system("pause");
+}
+
+void mostra()
+{
+     printf(" **************************************************\n");
+     printf("                     TABUADA                    \n");
+     printf(" **************************************************\n");
+
+}
+
+int main(){
+Ptr;
+
+    int opc, i=1;
+
+    do
+    {
+        system("cls");
+        mostra();
+        printf("\n Digite o Numero da Tabuada que você Quer saber\n ");
+        printf("\n Ou [0] para Sair\n ");
+        printf("\n Digite>>> ");
+        scanf("%i",&opc);
+
+        if(opc != 0){
+            CalcTabuada(opc);
+        }else{
+
+        printf("\n\n");
+        printf("Você optou por Sair!");
+        printf("\n\n");
+
+        }
+
+    }while(opc > 0);
+
+return 0;
+
+}
+#endif // exe34	 
+	 
+	 
+	 
+ 
+	 
+```
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	 
+	 
+	 
+	 
+	 
+	 
  
